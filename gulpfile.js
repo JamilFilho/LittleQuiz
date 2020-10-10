@@ -51,7 +51,7 @@ function js(done) {
             // pull in lib files first so our own code can depend on it
             'assets/src/js/*.js'
         ], {sourcemaps: true}),
-        dest('./', {sourcemaps: '.'}),
+        dest('assets/built/js/', {sourcemaps: '.'}),
         livereload()
     ], handleError(done));
 }
