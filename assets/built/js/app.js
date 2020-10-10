@@ -18,13 +18,17 @@ var app = new Vue({
             this.atualIndex.push(index);
         },
         alternateIndex: function(index) {
-            this.saveIndex(this.index); // Save the atual question
-            if(this.atualIndex.length < this.quiz.length) { // Checks if the number of questions answered is less than the total number of questions 
+            this.saveIndex(this.index); 
+            // Save the atual question
+            if(this.atualIndex.length < this.quiz.length) { 
+                // Checks if the number of questions answered is less than the total number of questions 
                 while (this.atualIndex.includes(this.index)) {
-                    this.index = Math.floor(Math.random() * this.quiz.length); // Get a new question
+                    this.index = Math.floor(Math.random() * this.quiz.length); 
+                    // Get a new question
                 }
             }
-            if(this.atualIndex.length === this.quiz.length) { // Checks whether the number of questions answered equals the total number of questions
+            if(this.atualIndex.length === this.quiz.length) { 
+                // Checks whether the number of questions answered equals the total number of questions
                 this.playSound('./assets/sounds/start-end/win.wav');
                 this.end = true;
             }
@@ -43,6 +47,8 @@ var app = new Vue({
             this.alternateIndex(); // Alternate index question
         },
         skipResponse: function() {
+            this.coins = this.coins - 5; // Add coins
+            this.playSound('./assets/sounds/buttons/send.wav'); // Play Sound
             this.alternateIndex(); // Alternate index question
         },
         timer: function() {
@@ -55,7 +61,7 @@ var app = new Vue({
         checkCoins: function() {
             let coins = this.coins;
             if(this.lifes != 0) {
-                coins = localStorage.getItem("coins"); // Get in LocalStorage te latest coin update
+                coins = localStorage.getItem("coins"); // Get in LocalStorage the latest coin update
             }
             if(this.lifes === 0) {
                 coins = localStorage.setItem("coins", `${this.coins}`); // Update coins on Local Storage
