@@ -83,7 +83,7 @@
             <!-- Question Itens -->
 
             <section class="question-buttons">
-                <!-- <button v-show="coins != 0" type="button" @click="helpQuestion()" class="nes-btn is-warning">?</button> -->
+                <button type="button" @click="skipResponse()" class="nes-btn is-warning">Pular</button>
                 <button v-if="responseIndex > 0" @click="sendResponse()" type="button" class="nes-btn is-success">Responder &#62;</button>
             </section>
             <!-- Question Buttons -->
@@ -132,6 +132,6 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDSN3ZH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="app.js"></script>
+    <script src="assets/built/js/app.js"></script>
 </body>
 </html>
