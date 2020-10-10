@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Bíblico</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/built/css/global.css">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Primary Meta Tags -->
+    <title>LittleQuiz - O quiz Bíblico mais divertido da internet;</title>
+    <meta name="title" content="LittleQuiz - O quiz Bíblico mais divertido da internet;">
+    <meta name="description" content="Será que você está pronto para o nosso desafio? Bora testar seus conhecimentos bíblicos?">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://littleson.com.br/">
+    <meta property="og:title" content="LittleQuiz - O quiz Bíblico mais divertido da internet;">
+    <meta property="og:description" content="Será que você está pronto para o nosso desafio? Bora testar seus conhecimentos bíblicos?">
+    <meta property="og:image" content="assets/images/thumbnail.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://littleson.com.br/">
+    <meta property="twitter:title" content="LittleQuiz - O quiz Bíblico mais divertido da internet;">
+    <meta property="twitter:description" content="Será que você está pronto para o nosso desafio? Bora testar seus conhecimentos bíblicos?">
+    <meta property="twitter:image" content="assets/images/thumbnail.jpg">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TDSN3ZH');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body class="quiz-app">
+    <div id="quiz-app">
+        <article class="quiz-main">
+            <header class="quiz-header">
+                <div class="quiz-lifes icon-list">
+                    <i v-for="life in lifes" class="nes-icon is-medium heart"></i>
+                </div>
+                <!-- Quiz Lifes -->
+                <div class="quiz-coins icon-list">
+                    <i class="nes-icon is-medium coin"></i>
+                    +{{ coins}}
+                </div>
+                <!-- Quiz Coins -->
+            </header>
+            <!-- Quiz Header -->
+
+            <section class="quiz-timer">
+                <progress :class="['nes-progress', progressStyle]" :value="time" :max="timeInit"></progress>
+            </section>
+            <!-- Quiz Time -->
+
+            <section class="question-header">
+                <h1 class="title">{{ question.title }}</h1>
+            </section>
+            <!-- Question Header -->
+
+            <section class="question-items">
+                <label :id="1" >
+                    <input :value="1" v-model="responseIndex" type="radio" class="nes-radio" name="answer"/>
+                    <span>{{ question.op1 }}</span>
+                </label>
+
+                <label :id="2" >
+                    <input :value="2" v-model="responseIndex" type="radio" class="nes-radio" name="answer"/>
+                    <span>{{ question.op2 }}</span>
+                </label>
+
+                <label :id="3" >
+                    <input :value="3" v-model="responseIndex" type="radio" class="nes-radio" name="answer"/>
+                    <span>{{ question.op3 }}</span>
+                </label>
+
+                <label :id="4" >
+                    <input :value="4" v-model="responseIndex" type="radio" class="nes-radio" name="answer"/>
+                    <span>{{ question.op4 }}</span>
+                </label>
+            </section>
+            <!-- Question Itens -->
+
+            <section class="question-buttons">
+                <!-- <button v-show="coins != 0" type="button" @click="helpQuestion()" class="nes-btn is-warning">?</button> -->
+                <button v-if="responseIndex > 0" @click="sendResponse()" type="button" class="nes-btn is-success">Responder &#62;</button>
+            </section>
+            <!-- Question Buttons -->
+        </article>
+        <!-- Quiz Main -->
+
+        <section v-show="end === true" class="quiz-end">
+            <div class="nes-container is-rounded">
+                <h1 class="nes-text is-error">Yeah!!! Você zerou o #LittleQuiz</h1>
+                <p>Compartilhe com seus amigos:</p>
+                <div class="over-actions">
+                    <section class="icon-list">
+                        <a href="https://api.whatsapp.com/send?text=Zerei%20o%20%23LittleQuiz%20.%20Bora%20tentar?%20https%3A%2F%2Fquiz.littleson.com.br" target="_blanck">
+                            <i class="nes-icon whatsapp is-medium"></i>
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?text=Zerei%20o%20%23LittleQuiz.%20Bora%20tentar?%20https%3A%2F%2Fquiz.littleson.com.br @um_littleson" target="_blanck">
+                            <i class="nes-icon twitter is-medium"></i>
+                        </a>
+                    </section>
+                    <button @click="restartQuiz()" type="button" class="nes-btn is-primary">Jogar novamente</button>
+                </div>
+            </div>
+        </section>
+        <!-- Quiz End -->
+        
+        <section v-show="lifes === 0" class="quiz-over">
+            <div class="nes-container is-rounded">
+                <h1 class="nes-text is-error">Ah, não! Você perdeu</h1>
+                <p>Compartilhe com seus amigos:</p>
+                <div class="over-actions">
+                    <section class="icon-list">
+                        <a :href="linkWhatsapp" target="_blanck">
+                            <i class="nes-icon whatsapp is-medium"></i>
+                        </a>
+                        <a :href="linkTwitter" target="_blanck">
+                            <i class="nes-icon twitter is-medium"></i>
+                        </a>
+                    </section>
+                    <button @click="restartQuiz()" type="button" class="nes-btn is-primary">Jogar novamente</button>
+                </div>
+            </div>
+        </section>
+        <!-- Quiz Over -->
+    </div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDSN3ZH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="app.js"></script>
+</body>
+</html>

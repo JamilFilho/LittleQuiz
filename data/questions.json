@@ -1,0 +1,443 @@
+[
+  {
+    "title": "Qual foi o primeiro milagre de Jesus?",
+    "op1": "Multiplicação dos pães",
+    "op2": "Cura do cego de Jericó",
+    "op3": "Transformou água em vinho",
+    "op4": "Ressuscitou Lázaro",
+    "ans": 3,
+    "hard": 1
+  },
+  {
+    "title": "Enos era filho de quem?",
+    "op1": "Enoque",
+    "op2": "Sete",
+    "op3": "Cainã",
+    "op4": "Adão",
+    "ans": 2,
+    "hard": 3
+  },
+  {
+    "title": "Quantos versículos têm o Salmo 119",
+    "op1": 120,
+    "op2": 154,
+    "op3": 179,
+    "op4": 176,
+    "ans": 4,
+    "hard": 4
+  },
+  {
+    "title": "Qual apóstolo foi sorteado?",
+    "op1": "Matias",
+    "op2": "Barnabé",
+    "op3": "Paulo",
+    "op4": "Silas",
+    "ans": 1,
+    "hard": 2
+  },
+  {
+    "title": "Lucas escreveu o livro de Atos para quem?",
+    "op1": "Timóteo",
+    "op2": "Teófilo",
+    "op3": "Félix",
+    "op4": "Demétrio",
+    "ans": 2,
+    "hard": 3
+  },
+  {
+    "title": "Quantos dias choveram no dilúvio?",
+    "op1": "20 dias e 23 noites",
+    "op2": "10 dias e 15 noites",
+    "op3": "40 dias e 40 noites",
+    "op4": "40 dias e 42 noites",
+    "ans": 3,
+    "hard": 1
+  },
+  {
+    "title": "Em qual monte Moisés recebeu os Dez Mandamentos?",
+    "op1": "Monte Horebe",
+    "op2": "Monte Sinai",
+    "op3": "Monte Ararate",
+    "op4": "Monte Tabor",
+    "ans": 2,
+    "hard": 1
+  },
+  {
+    "title": "Quem era o pai de João Batista?",
+    "op1": "Simão",
+    "op2": "Simeão",
+    "op3": "José",
+    "op4": "Zacarias",
+    "ans": 4,
+    "hard": 3
+  },
+  {
+    "title": "Qual o menor livro no Novo Testamento?",
+    "op1": "Filemom",
+    "op2": "2 João",
+    "op3": "1 Pedro",
+    "op4": "Judas",
+    "ans": 2,
+    "hard": 4
+  },
+  {
+    "title": "Quem não está na galeria dos heróis da fé?",
+    "op1": "Sara",
+    "op2": "Noé",
+    "op3": "Raabe",
+    "op4": "Jesus",
+    "ans": 4,
+    "hard": 4
+  },
+  {
+    "title": "Quem orou por Paulo em Damasco?",
+    "op1": "Mateus",
+    "op2": "Ananias",
+    "op3": "Áquila",
+    "op4": "Timóteo",
+    "ans": 2,
+    "hard": 3
+  },
+  {
+    "title": "Em qual cidade surgiu o termo \"cristão\"?",
+    "op1": "Éfeso",
+    "op2": "Pafos",
+    "op3": "Panfília",
+    "op4": "Antioquia",
+    "ans": 4,
+    "hard": 3
+  },
+  {
+    "title": "Quantos graus a sombra do relógio de Acaz regrediu quando Ezequias foi curado?",
+    "op1": "15 graus",
+    "op2": "12 graus",
+    "op3": "10 graus",
+    "op4": "11 graus",
+    "ans": 3,
+    "hard": 4
+  },
+  {
+    "title": "Qual praga do Apocalipse queimará a terça parte da relva?",
+    "op1": "Primeiro selo",
+    "op2": "Segunda Trombeta",
+    "op3": "Quarta Taça",
+    "op4": "Primeira Trombeta",
+    "ans": 4,
+    "hard": 4
+  },
+  {
+    "title": "Quantos anos Enoque andou com Deus?",
+    "op1": "502 anos",
+    "op2": "300 anos",
+    "op3": "100 anos",
+    "op4": "780 anos",
+    "ans": 2,
+    "hard": 3
+  },
+  {
+    "title": "Melquisedeque era rei e sacerdote de qual cidade?",
+    "op1": "Salém",
+    "op2": "Résen",
+    "op3": "Calá",
+    "op4": "Acade",
+    "ans": 1,
+    "hard": 3
+  },
+  {
+    "title": "Quem foi o primeiro rei de Israel?",
+    "op1": "Samuel",
+    "op2": "Davi",
+    "op3": "Saul",
+    "op4": "Salomão",
+    "ans": 3,
+    "hard": 1
+  },
+  {
+    "title": "Qual festa era comemorada pelos hebreus no dia 14 de Nisã?",
+    "op1": "Festa das Trombetas",
+    "op2": "Festa do Pentecoste",
+    "op3": "Dia do Perdão",
+    "op4": "Festa da Páscoa",
+    "ans": 4,
+    "hard": 4
+  },
+  {
+    "title": "Qual rei assumiu o trono de Amazias com dezesseis anos?",
+    "op1": "Joiada",
+    "op2": "Uzias",
+    "op3": "Josafé",
+    "op4": "Jotão",
+    "ans": 2,
+    "hard": 4
+  },
+  {
+    "title": "Quantas pessoas se converteram no primeiro sermão de Pedro?",
+    "op1": "Cinco mil",
+    "op2": "Duas mil",
+    "op3": "Três mil",
+    "op4": "Quatro mil",
+    "ans": 3,
+    "hard": 3
+  },
+  {
+    "title": "Por quem Paulo roga a Filemom?",
+    "op1": "Tito",
+    "op2": "Artemas",
+    "op3": "Zenas",
+    "op4": "Onésimo",
+    "ans": 4,
+    "hard": 3
+  },
+  {
+    "title": "Quantos capítulos o livro de Hebreus possuí?",
+    "op1": 15,
+    "op2": 21,
+    "op3": 13,
+    "op4": 18,
+    "ans": 3,
+    "hard": 3
+  },
+  {
+    "title": "Jetro era sogro de quem?",
+    "op1": "Arão",
+    "op2": "Josué",
+    "op3": "Moisés",
+    "op4": "José",
+    "ans": 3,
+    "hard": 3
+  },
+  {
+    "title": "Qual foi a quarta praga derramada sobre o Egito?",
+    "op1": "Praga das Rãs",
+    "op2": "Praga da peste",
+    "op3": "Praga da saraiva",
+    "op4": "Praga das moscas",
+    "ans": 4,
+    "hard": 3
+  },
+  {
+    "title": "José do Egito morreu com quantos anos?",
+    "op1": 110,
+    "op2": 90,
+    "op3": 92,
+    "op4": 86,
+    "ans": 1,
+    "hard": 4
+  },
+  {
+    "title": "Qual era o comprimento da Arca de Noé?",
+    "op1": "160 côvados",
+    "op2": "450 côvados",
+    "op3": "300 côvados",
+    "op4": "280 côvados",
+    "ans": 3,
+    "hard": 4
+  },
+  {
+    "title": "Qual rei Jesus chamou de raposa?",
+    "op1": "Pilatos",
+    "op2": "Herodes",
+    "op3": "Nero",
+    "op4": "Festo",
+    "ans": 2,
+    "hard": 3
+  },
+  {
+    "title": "Quem profetizou que o Senhor seria traído por trinta moedas e que este valor compraria o campo do oleiro?",
+    "op1": "Oséias",
+    "op2": "Obadias",
+    "op3": "Isaías",
+    "op4": "Zacarias",
+    "ans": 4,
+    "hard": 4
+  },
+  {
+    "title": "Quantas vezes Naamã mergulhou no Jordão?",
+    "op1": 2,
+    "op2": 5,
+    "op3": 5,
+    "op4": 7,
+    "ans": 4,
+    "hard": 1
+  },
+  {
+    "title": "Qual o nome da ilha onde o Apóstolo Paulo foi picado por uma víbora?",
+    "op1": "Patmos",
+    "op2": "Cilícia",
+    "op3": "Malta",
+    "op4": "Capadócia",
+    "ans": 3,
+    "hard": 3
+  },
+  {
+    "title": "O que o profeta Eliseu jogou na água para fazer um machado flutuar?",
+    "op1": "Um pedaço de pau",
+    "op2": "Sua capa",
+    "op3": "Um pouco de terra",
+    "op4": "Uma pedra",
+    "ans": 1,
+    "hard": 2
+  },
+  {
+    "title": "Em qual trombeta é aberto o poço do abismo após a queda de uma estrela?",
+    "op1": "Na sexta trombeta",
+    "op2": "Na terceira trombeta",
+    "op3": "Na quinta trombeta",
+    "op4": "Na sétima trombeta",
+    "ans": 3,
+    "hard": 4
+  },
+  {
+    "title": "Quantos filhos Jó recebeu depois da sua provação?",
+    "op1": 7,
+    "op2": 10,
+    "op3": 3,
+    "op4": 11,
+    "ans": 1,
+    "hard": 3
+  },
+  {
+    "title": "Qual praga do Apocalipse secará o rio Eufrates?",
+    "op1": "Primeira Trombeta",
+    "op2": "Quarta Trombeta",
+    "op3": "Sétimo Selo",
+    "op4": "Sexta Taça",
+    "ans": 4,
+    "hard": 4
+  },
+  {
+    "title": "Que tribo de Israel Deus ordenou que não fosse contada?",
+    "op1": "Dã",
+    "op2": "Levi",
+    "op3": "Judá",
+    "op4": "Zebulom",
+    "ans": 2,
+    "hard": 3
+  },
+  {
+    "title": "Quantos anos os israelitas serviram a Eglom?",
+    "op1": "14 anos",
+    "op2": "16 anos",
+    "op3": "10 anos",
+    "op4": "18 anos",
+    "ans": 4,
+    "hard": 3
+  },
+  {
+    "title": "Com quantas cordas os homens de Judá amarram a Sansão?",
+    "op1": "3 cordas",
+    "op2": "6 cordas",
+    "op3": "2 cordas",
+    "op4": "10 cordas",
+    "ans": 3,
+    "hard": 4
+  },
+  {
+    "title": "Onde Gideão foi sepultado?",
+    "op1": "Ofra",
+    "op2": "Gileade",
+    "op3": "Sucote",
+    "op4": "Gerizim",
+    "ans": 1,
+    "hard": 4
+  },
+  {
+    "title": "Quantos homens covardes deixaram Gideão?",
+    "op1": "10 mil",
+    "op2": "22 mil",
+    "op3": "31 mil",
+    "op4": "14 mil",
+    "ans": 2,
+    "hard": 3
+  },
+  {
+    "title": "Qual profeta teve uma visão no rio Quebar?",
+    "op1": "Jeremias",
+    "op2": "Isaías",
+    "op3": "Ezequiel",
+    "op4": "Malaquias",
+    "ans": 3,
+    "hard": 3
+  },
+  {
+    "title": "Qual profeta anunciou \"... do Egito chamei meu filho\"?",
+    "op1": "Daniel",
+    "op2": "Joel",
+    "op3": "Amós",
+    "op4": "Oséias",
+    "ans": 4,
+    "hard": 4
+  },
+  {
+    "title": "A carta de Tiago tem quantos capítulos?",
+    "op1": 4,
+    "op2": 6,
+    "op3": 5,
+    "op4": 3,
+    "ans": 3,
+    "hard": 3
+  },
+  {
+    "title": "Qual o menor livro do Antigo Testamento",
+    "op1": "Joel",
+    "op2": "Amós",
+    "op3": "Malaquias",
+    "op4": "Obadias",
+    "ans": 4,
+    "hard": 3
+  },
+  {
+    "title": "Qual o maior livro do Novo Testamento?",
+    "op1": "Atos",
+    "op2": "João",
+    "op3": "Apocalipse",
+    "op4": "Romanos",
+    "ans": 1,
+    "hard": 3
+  },
+  {
+    "title": "Por quantos dias Jonas pregou em Nínive?",
+    "op1": "3 dias",
+    "op2": "4 dias",
+    "op3": "1 dia",
+    "op4": "5 dias",
+    "ans": 3,
+    "hard": 3
+  },
+  {
+    "title": "Qual profeta profetiza apenas contra Edom?",
+    "op1": "Isaías",
+    "op2": "Oséias",
+    "op3": "Obadias",
+    "op4": "Malaquias",
+    "ans": 3,
+    "hard": 4
+  },
+  {
+    "title": "Após pregar para o eunuco o Espírito levou Felipe para onde?",
+    "op1": "Damasco",
+    "op2": "Azoto",
+    "op3": "Derbe",
+    "op4": "Licaônia",
+    "ans": 2,
+    "hard": 3
+  },
+  {
+    "title": "Quem queria comprar dos apóstolos o Espírito Santo em Samaria?",
+    "op1": "Elimas",
+    "op2": "Simão",
+    "op3": "Demas",
+    "op4": "Pólux",
+    "ans": 2,
+    "hard": 3
+  },
+  {
+    "title": "Quantas pessoas haviam no navio que naufragou levando Paulo à Itália?",
+    "op1": 210,
+    "op2": 342,
+    "op3": 276,
+    "op4": 284,
+    "ans": 3,
+    "hard": 4
+  }
+]

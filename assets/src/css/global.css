@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Default Application Settings */
+
+*, 
+*:before, 
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+:root {
+    --dark:#222222;
+    --white:#ffffff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+html,
+body {
+    width:100vw;
+    height: 100vh;
+    margin:0;
+    padding:0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Quiz Main */
+
+.quiz-main {
+    margin:0 auto;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Quiz Header */
+
+.quiz-header {
+    width:100vw;
+    height:10vh;
+    padding:0 4rem 0 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:var(--white);
+    background-color:var(--dark)
+}
+
+.quiz-header .nes-icon.is-medium {
+    margin-right: 32px;
+    margin-bottom: 12px;
+    transform: scale(2);
+}
+
+.quiz-coins .nes-icon {
+    margin-right: 10px!important;
+}
+
+/* Quiz Intro */
+
+.quiz-intro {
+    width:90vw;
+    height:95vh;
+    margin:0 auto;
+    padding:2rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-start {
+    position: fixed;
+    left:0;
+    bottom: 10rem;
+    width: 90vw;
+    height:10vh;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.btn-support {
+    position: absolute;
+    height:2rem;
+    bottom:2rem;
+    left:50%;
+    transform: translateX(-50%);
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+/* Question Header */
+
+.question-header {
+    width:90vw;
+    height:20vh;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.question-header h1 {
+    font-size:1.8rem;
+}
+
+/* Quiz Time */
+
+.quiz-timer {
+    position:absolute;
+    top:10vh;
+    left:0;
+    width:100vw;
+    height:2vh;
+}
+
+.quiz-timer progress {
+    width:100%;
+    height:3vh;
+    margin:0;
+}
+
+/* Question Itens */
+
+.question-items {
+    width:80vw;
+    height:30vh;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.question-items label {
+    margin:1rem 0 1rem 0;
+}
+
+.question-items label input {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* Question Buttons */
+
+.question-buttons {
+    width:100%;
+    height:20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.question-buttons button:not(:first-of-type) {
+    margin-left:2rem;
+}
+
+/* Quiz Instructions and Support Modal */
+
+.quiz-instructions,
+.quiz-support {
+    width:90vw;
+}
+
+.quiz-instructions .title,
+.quiz-support .title {
+    text-transform: uppercase;
+}
+
+.quiz-instructions p,
+.quiz-support p {
+    font-size: 1.3rem;
+    margin-bottom:1rem;
+}
+
+.quiz-instructions .dialog-menu,
+.quiz-support .dialog-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:2rem;
+}
+
+/* Quiz Over */
+
+.quiz-over,
+.quiz-end {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.quiz-over::after,
+.quiz-end::after {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    content:'';
+    background-color:color(var(--dark) a(60%));
+    z-index:900;
+}
+
+.quiz-over .nes-container,
+.quiz-end .nes-container {
+    position: fixed;
+    width:80vw;
+    height:70vh;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:var(--white);
+    z-index:999;
+}
+
+.quiz-over .nes-container h1,
+.quiz-end .nes-container h1 {
+    margin-bottom:5rem;
+}
+
+.quiz-over .nes-container .over-actions,
+.quiz-end .nes-container .over-actions {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-over .nes-container .over-actions .icon-list,
+.quiz-end .nes-container .over-actions .icon-list {
+    margin-bottom:2rem;
+}
+
+.quiz-over .rank,
+.quiz-end .rank {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:10vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}

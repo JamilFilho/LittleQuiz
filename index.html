@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Bíblico</title>
+    <link rel="stylesheet" href="assets/built/css/global.css">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Primary Meta Tags -->
+    <title>LittleQuiz - O quiz Bíblico mais divertido da internet;</title>
+    <meta name="title" content="LittleQuiz - O quiz Bíblico mais divertido da internet;">
+    <meta name="description" content="Será que você está pronto para o nosso desafio? Bora testar seus conhecimentos bíblicos?">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://littleson.com.br/">
+    <meta property="og:title" content="LittleQuiz - O quiz Bíblico mais divertido da internet;">
+    <meta property="og:description" content="Será que você está pronto para o nosso desafio? Bora testar seus conhecimentos bíblicos?">
+    <meta property="og:image" content="assets/images/thumbnail.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://littleson.com.br/">
+    <meta property="twitter:title" content="LittleQuiz - O quiz Bíblico mais divertido da internet;">
+    <meta property="twitter:description" content="Será que você está pronto para o nosso desafio? Bora testar seus conhecimentos bíblicos?">
+    <meta property="twitter:image" content="assets/images/thumbnail.jpg">
+</head>
+<body class="quiz-app">
+    <div id="quiz-app">
+        <article class="quiz-main">
+            <header class="quiz-header">
+                <h1 class="title">#LittleQuiz</h1>
+                <a class="btn-instructions" onclick="document.getElementById('instructions').showModal();">
+                    <i class="nes-logo"></i>
+                </a>
+
+                <dialog class="nes-dialog quiz-instructions" id="instructions">
+                <form method="dialog">
+                    <p class="title">Instruções:</p>
+                    <p>Você começa o #LittleQuiz com 3(três) vidas e nenhuma moeda.</p>
+                    <p>Para cada resposta errada ou não respondida você perde 1(uma) vida.</p>
+                    <p>Para cada resposta certa você ganha 10(dez) moedas.</p>
+                    <!-- <p>Se você não souber a resposta pode utilizar a ajuda, para isso você gasta 5(cinco) moedas.</p> -->
+                    <p>Cada pergunta tem um tempo de resposta de acordo com o nível de dificuldade.</p>
+                    <menu class="dialog-menu">
+                    <button class="nes-btn is-success">Ok, entendi.</button>
+                    </menu>
+                </form>
+                </dialog>
+
+            </header>
+            <!-- Quiz Header -->
+
+            <section class="quiz-intro">
+                <p>Hey, seja bem-vindo(a) ao #LittleQuiz.</p>
+                <p>Será que você está preparado(a) para encarar nosso desafio?</p>
+                <p>Por enquanto são 50 perguntas...</p>
+            </section>
+            <a href="quiz.html" class="nes-btn is-success btn-start" @click="playSound('./assets/sounds/start-end/load.wav')">INICIAR</a>
+        </article>
+        <!-- Quiz Main -->
+
+        <a class="nes-text is-primary btn-support" onclick="document.getElementById('support').showModal();">
+            Sobre
+        </a>
+
+        <dialog class="nes-dialog quiz-support" id="support">
+        <form method="dialog">
+            <p class="title">#LittleQuiz v.0.1(Beta):</p>
+            <p>O #LittleQuiz foi desenvolvido como uma atividade interativa para o período da quarentena, disponibilizado e mantido gratitamente pelo projeto Little Son.</p>
+            <p>Se você curte programação e gostaria de nos auxiliar a implementar mais funcionalidades, <a href="https://github.com/JamilFilho/quizbiblico" target="_blanck" class="nes-text is-primary">acesse nosso GitHub</a></p>
+            <menu class="dialog-menu">
+            <button class="nes-btn is-normal">Fechar</button>
+            </menu>
+        </form>
+        </dialog>
+    </div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDSN3ZH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="app.js"></script>
+</body>
+</html>
