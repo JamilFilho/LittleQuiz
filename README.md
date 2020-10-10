@@ -25,7 +25,7 @@ O arquivo possuí a seguinte estrutura:
 ```
 `title`: é o enunciado da questão
 
-`op1`: é a opção disponível para resposta. Obrigatóriamente deve haver 4 opções
+`op1`: é a opção disponível para resposta. Obrigatoriamente deve haver 4 opções.
 
 `ans`: indica qual é a resposta correta. Deve ser indicado como um número inteiro, sem aspas.
 
