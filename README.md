@@ -1,5 +1,5 @@
 # LittleQuiz
-O LittleQuiz é um quiz de perguntas bíblicas desenvolvido para o projeto [Little Son](https://littleson.com.br) a partir do QuizGames desenvolvido por Giordane Oliveira.
+O LittleQuiz é um quiz de perguntas bíblicas desenvolvido para o projeto [Little Son](https://littleson.com.br) a partir do QuizGames desenvolvido por [Giordane Oliveira](https://github.com/devgiordane).
 
 # Como ajudar?
 Se você tem interesse em contribuir no desenvolvimento do projeto há duas maneiras de auxiliar:
