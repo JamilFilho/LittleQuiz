@@ -217,10 +217,10 @@
   },
   {
     "title": "José do Egito morreu com quantos anos?",
-    "op1": 110,
-    "op2": 90,
-    "op3": 92,
-    "op4": 86,
+    "op1": "110",
+    "op2": "90",
+    "op3": "92",
+    "op4": "86",
     "ans": 1,
     "hard": 4
   },
@@ -253,10 +253,10 @@
   },
   {
     "title": "Quantas vezes Naamã mergulhou no Jordão?",
-    "op1": 2,
-    "op2": 5,
-    "op3": 5,
-    "op4": 7,
+    "op1": "2",
+    "op2": "5",
+    "op3": "5",
+    "op4": "7",
     "ans": 4,
     "hard": 1
   },
@@ -289,10 +289,10 @@
   },
   {
     "title": "Quantos filhos Jó recebeu depois da sua provação?",
-    "op1": 7,
-    "op2": 10,
-    "op3": 3,
-    "op4": 11,
+    "op1": "7",
+    "op2": "10",
+    "op3": "3",
+    "op4": "11",
     "ans": 1,
     "hard": 3
   },
@@ -370,11 +370,11 @@
   },
   {
     "title": "A carta de Tiago tem quantos capítulos?",
-    "op1": 4,
-    "op2": 6,
-    "op3": 5,
-    "op4": 3,
-    "ans": 3,
+    "op1": "4",
+    "op2": "6",
+    "op3": "5",
+    "op4": "3",
+    "ans": "3",
     "hard": 3
   },
   {
