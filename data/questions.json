@@ -19,10 +19,10 @@
   },
   {
     "title": "Quantos versículos têm o Salmo 119",
-    "op1": 120,
-    "op2": 154,
-    "op3": 179,
-    "op4": 176,
+    "op1": "120",
+    "op2": "154",
+    "op3": "179",
+    "op4": "176",
     "ans": 4,
     "hard": 4
   },
@@ -190,10 +190,10 @@
   },
   {
     "title": "Quantos capítulos o livro de Hebreus possuí?",
-    "op1": 15,
-    "op2": 21,
-    "op3": 13,
-    "op4": 18,
+    "op1": "15",
+    "op2": "21",
+    "op3": "13",
+    "op4": "18",
     "ans": 3,
     "hard": 3
   },
@@ -433,11 +433,20 @@
   },
   {
     "title": "Quantas pessoas haviam no navio que naufragou levando Paulo à Itália?",
-    "op1": 210,
-    "op2": 342,
-    "op3": 276,
-    "op4": 284,
+    "op1": "210",
+    "op2": "342",
+    "op3": "276",
+    "op4": "284",
     "ans": 3,
     "hard": 4
+  },
+  {
+    "title": "Quantos dias houve trevas no Egito?",
+    "op1": "Cinco dias",
+    "op2": "Dois dias",
+    "op3": "Quatro dias",
+    "op4": "Três dias",
+    "ans": 4,
+    "hard": 3
   }
 ]
