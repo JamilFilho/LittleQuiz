@@ -1,0 +1,9 @@
+{
+    "title": {"type" : "string"},
+    "op1": {"type" : "string"},
+    "op2": {"type" : "string"},
+    "op3": {"type" : "string"},
+    "op4": {"type" : "string"},
+    "ans": {"type" : "number", "maximum": 4},
+    "hard": {"type" : "number", "maximum": 4}
+}
