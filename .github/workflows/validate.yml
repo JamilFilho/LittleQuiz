@@ -1,18 +1,25 @@
-name: Validate JSONs
+# Validates JSON schema and data using Node module.
+# https://github.com/ajv-validator/ajv-cli
+name: Validate JSON
 
 on:
   push:
-      branches: [ main ]
+    branches: [ main ]
   pull_request:
-      branches: [ main ]
+    branches: [ main ]
 
 jobs:
-  verify-json-validation:
+  build:
+
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v1
-      - name: Validate JSON
-        uses: docker://orrosenblatt/validate-json-action:latest
-        env:
-          INPUT_SCHEMA: ./data/schema.json
-          INPUT_JSONS: ./data/questions.json
+    - uses: actions/checkout@v2
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - run: npm -v
+    - run: npm install -g ajv-cli
+    - run: ajv help
+    - run: ajv validate -s data/schema.json -d data/questions.json
