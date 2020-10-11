@@ -1,39 +1,127 @@
 {
-    "$schema": "https://json-schema.org/draft-04/schema#",
-    "id": "http://example.com/example.json",
-    "title": "User",
-    "description": "Validação da estrutura das questões",
-    "type": "object",
-    "properties": {
-        "title": {
-            "description": "enunciado da questão",
-            "type": ["string"]
-        },
-        "op1": {
-            "description": "opção da questão",
-            "type": ["string"]
-        },
-        "op2": {
-            "description": "opção da questão",
-            "type": ["string"]
-        },
-        "op3": {
-            "description": "opção da questão",
-            "type": ["string"]
-        },
-        "op4": {
-            "description": "opção da questão",
-            "type": ["string"]
-        },
-        "ans": {
-            "description": "questão correta",
-            "type": ["integer"],
-            "maximum": 4
-        },
-        "hard": {
-            "description": "nível de dificuldade",
-            "type": ["integer"],
-            "maximum": 4
-        }
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": [],
+    "examples": [
+        [
+            {
+                "title": "Enunciado da questão",
+                "op1": "Opção 1",
+                "op2": "Opção 2",
+                "op3": "Opção 3",
+                "op4": "Opção 4",
+                "ans": 3,
+                "hard": 1
+            }
+        ]
+    ],
+    "additionalItems": true,
+    "items": {
+        "$id": "#/items",
+        "anyOf": [
+            {
+                "$id": "#/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "title": "Enunciado da questão",
+                        "op1": "Opção 1",
+                        "op2": "Opção 2",
+                        "op3": "Opção 3",
+                        "op4": "Opção 4",
+                        "ans": 3,
+                        "hard": 1
+                    }
+                ],
+                "required": [
+                    "title",
+                    "op1",
+                    "op2",
+                    "op3",
+                    "op4",
+                    "ans",
+                    "hard"
+                ],
+                "properties": {
+                    "title": {
+                        "$id": "#/items/anyOf/0/properties/title",
+                        "type": "string",
+                        "title": "The title schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Enunciado da questão"
+                        ]
+                    },
+                    "op1": {
+                        "$id": "#/items/anyOf/0/properties/op1",
+                        "type": "string",
+                        "title": "The op1 schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Opção 1"
+                        ]
+                    },
+                    "op2": {
+                        "$id": "#/items/anyOf/0/properties/op2",
+                        "type": "string",
+                        "title": "The op2 schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Opção 2"
+                        ]
+                    },
+                    "op3": {
+                        "$id": "#/items/anyOf/0/properties/op3",
+                        "type": "string",
+                        "title": "The op3 schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Opção 3"
+                        ]
+                    },
+                    "op4": {
+                        "$id": "#/items/anyOf/0/properties/op4",
+                        "type": "string",
+                        "title": "The op4 schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Opção 4"
+                        ]
+                    },
+                    "ans": {
+                        "$id": "#/items/anyOf/0/properties/ans",
+                        "type": "integer",
+                        "title": "The ans schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            3
+                        ]
+                    },
+                    "hard": {
+                        "$id": "#/items/anyOf/0/properties/hard",
+                        "type": "integer",
+                        "title": "The hard schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            1
+                        ]
+                    }
+                },
+                "additionalProperties": true
+            }
+        ]
     }
 }
