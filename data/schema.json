@@ -1,9 +1,39 @@
 {
-    "title": {"type" : "string"},
-    "op1": {"type" : "string"},
-    "op2": {"type" : "string"},
-    "op3": {"type" : "string"},
-    "op4": {"type" : "string"},
-    "ans": {"type" : "number", "maximum": 4},
-    "hard": {"type" : "number", "maximum": 4}
+    "$schema": "https://json-schema.org/draft-04/schema#",
+    "id": "http://example.com/example.json",
+    "title": "User",
+    "description": "Validação da estrutura das questões",
+    "type": "object",
+    "properties": {
+        "title": {
+            "description": "enunciado da questão",
+            "type": ["string"]
+        },
+        "op1": {
+            "description": "opção da questão",
+            "type": ["string"]
+        },
+        "op2": {
+            "description": "opção da questão",
+            "type": ["string"]
+        },
+        "op3": {
+            "description": "opção da questão",
+            "type": ["string"]
+        },
+        "op4": {
+            "description": "opção da questão",
+            "type": ["string"]
+        },
+        "ans": {
+            "description": "questão correta",
+            "type": ["integer"],
+            "maximum": 4
+        },
+        "hard": {
+            "description": "nível de dificuldade",
+            "type": ["integer"],
+            "maximum": 4
+        }
+    }
 }
